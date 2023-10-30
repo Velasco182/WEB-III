@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2 ConfiApp</title>
+    <link rel="stylesheet" href="/Javier/repaso_JS/assets/css/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Formulario de Datos</h1>
+        
+        <form class="formulario" onsubmit="(event)">
+            <h3>Tutor</h3>
+            <div class="cedula"><label>Cedula</label>
+                <input type="number" name="" id="cedula" required>
+            </div>
+            <div class="nombres"><label>Nombres</label>
+                <input type="text" name="" id="nombres" required>
+            </div>
+            <div class="apellidos"><label>Apellidos</label>
+                <input type="text" name="" id="apellidos" required>
+            </div>
+            <div class="correo"><label>Correo</label>
+                <input type="email" name="" id="correo" required>
+            </div>
+            <div class="fecha"><label>Fecha de Nacimiento</label>
+                <input type="date" name="" id="fecha" required>
+            </div>
+            <div class="parentezco"><label>Parentezco</label>
+                <select id="parentezco" required>
+                    <option value="Padre">Padre</option>
+                    <option value="Madre">Madre</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+
+            <h3>Datos del Menor</h3>
+
+            <div class="nombres"><label>Nombres</label>
+                <input type="text" name="" id="nombresM" required>
+            </div>
+            <div class="apellidos"><label>Apellido</label>
+                <input type="text" name="" id="apellidosM" required>
+            </div>
+            
+
+            <div class="btnsContenedor"><button class="btns" type="submit">Enviar</button></div>
+        </form>
+    </div>
+    
+
+    <script src="/Javier/repaso_JS/assets/js/reto2.js"></script>
+</body>
+</html>

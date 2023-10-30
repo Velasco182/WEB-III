@@ -1,0 +1,28 @@
+*{
+    background-color: bisque;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    color:black;
+    text-align: center;
+    
+}
+.btns:hover{
+    /* color: blueviolet; */
+    font-size: xx-large;
+    /* padding-top: 20px; */
+}
+
+.btnsContenedor{
+    padding-top: 20px; 
+}
+
+.card{
+    width: fit-content;
+    /* align-self: center; */
+}
+
+.notas{
+    margin: 7px;
+    margin-bottom: 5px;
+    background-color: white;
+}

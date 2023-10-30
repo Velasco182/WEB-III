@@ -1,0 +1,97 @@
+* En la carpeta del proyecto (Modulos):
+- comando npm init -y (crea el archivo de configuración json)
+- npm install express
+- npm install nodemon -D (Ejecuta el codigo cada que se modifica)
+- npm install morgan "Logger"(Para ver por consola las peticiones)
+- npm install bcryptjs (Ayuda a encriptar contraseñas)
+- npm install jsonwebtoken (Crear tokens)
+- npm install cookie-parser (convertir cookies)
+- npm install zod (usando con ts, Validar maquetado de datos y demás)
+- npm create vite (crear front-end)
+    /=>Project name: client
+    /=>Select framework: React
+    /=>Select variant: JavaScript
+------------------------------------------------------------------------------------------------------------
+// Ya sea con mongoatlas o mongodb
+- npm install mongoose (Conexión entre mongodb y el proyecto. Modulo que permite modelar los datos y conectarnos a mongodb)
+------------------------------------------------------------------------------------------------------------
+* Ejecutar proyecto:
+1° node src/app.js
+Ahora: npm run dev (Despues de nodemon)
+------------------------------------------------------------------------------------------------------------
+* Crear carpetas y Archivos:
+
+- src = carpeta principal
+- controllers = crear funciones para una url visitada o ejecutada
+- models = modelos de datos de las bases de datos de mongo
+- routes = crear urls del backend, endpoints
+- middlewares = ayudan a crear funciones para ayudar a validar usuarios
+- schemas = validaciones de los datos antes de llegar a la base de datos (backend)
+- libs = escribir código que ayuda a reimportar varias veces
+- client = al ejecutar vite se crea una carpeta cliente que contiene el front end de con React 
+
++ conección a la base de datos: db.json
++ crear configuraciones que el resto de archivos puede importar (configuraciones globales): config.js
++ arranque de la aplicación: index.js
++ configuración el codigo de express del backend: app.js
++ Para especificarle la forma de los datos que estamos guardando (estructura fija): models/user.model.js
++ Rutas relacionadas con autenticación: routes/auth.routes.js, controllers/auth.controller.js
++ "Modulizar" codigo para creación del token: libs/jwt.js
++ validar los tokens para cargar informacion del perfil middlewares/validateToken.js
++ crear tareas para cada usuario autenticado routes/task.routes.js
++ peticiones a la base de datos para gestionar tareas controllers/task.controller.js
++ estrudctura de datos para las tareas models/task.model.js
++ crear validación con zod para campos requeridos en front schemas/auth.schemas.js
++ crear validación complementaria para zod middlewares/validator.middleware.js
++ validacion de campos de tareas con zod schemas/task.schemas.js
+------------------------------------------------------------------------------------------------------------
+* Extensiones:
+
+- Thunder Client: Para hacer peticiones HTTP al proyecto
+- MongoDB for VS Code: Permite ver las bases de datos que hay en mongodb
+
+------------------------------------------------------------------------------------------------------------
+* Test 1:
+
++ Post Register:
+        {
+            "email": "test@test.com", 
+            "password": "test",
+            "username": "test"
+        }
+
+        R/: server on port 4000
+            DB Connect
+            test@test.com test test
+            POST /api/register 200 12.444 ms - 11
+
++ Post Login:
+        {
+            "password": "test",
+            "username": "test"
+        }
+
+        R/: server on port 4000
+            DB Connect
+            POST /api/login 200 2.114 ms - 2
+
+            {
+                "id": "650b72eae33652abf4390056",
+                "username": "test",
+                "email": "test@test.com",
+                "createAt": "2023-09-20T22:32:10.242Z",
+                "updatedAt": "2023-09-20T22:32:10.242Z"
+            }
+
++ Post Logout: 
+        {
+        
+        }
+
+        R/: server on port 4000
+            DB Connect
+            POST /api/logout 200 2.114 ms - 2
+
+            OK
+
+

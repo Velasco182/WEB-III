@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Registro de notas</title>
+</head>
+
+<body>
+    <div class="logica">
+        <h1>Analisis y desarrollo de Software <br>
+            ADSO 2023</h1>
+
+        <form onsubmit="datosFormulario(event)" id="formulario" class="formulario">
+
+            <div class="trimestres">
+                <label for="">Nombre: </label>
+                        <input id="nombre" type="text" required>
+            </div><br>
+            <div class="trimestres">
+                <label for="">PRIMERA NOTA (30%):</label>
+                        <input id="n1" type="number" required>
+            </div><br>
+            <div class="trimestres">
+                <label for="">SEGUNDA NOTA (30%):</label>
+                        <input id="n2" type="number" required>
+            </div><br>
+            <div class="trimestres">
+                <label for="">TERCERA NOTA (40%):</label>
+                        <input id="n3" type="number" required>
+            </div><br>
+
+
+    </div>
+    <br>
+    <div class="btnsContenedor">
+        <input class="btns" type="submit" value="Enviar" onclick="location.href='javascript:miNota(n1, n2, n3)'">
+    </div>
+
+    </form>
+    </div>
+    <div class="card">
+        <div class="contenedor mostrar" id="tablaNotas">
+
+        </div>
+    </div><br>
+
+    <script src="/assets/js/await.js"></script>
+    <!-- <script src="/Rider/proyectoNotas/assets/js/then.js"></script> -->
+</body>
+
+</html>

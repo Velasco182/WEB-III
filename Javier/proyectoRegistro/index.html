@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Ruta</title>
+    <link rel="icon" href="/imgs/img.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>CONFIAPP</h1>
+        <div class="">
+            <form class="formulario" id="formulario" onsubmit="(event)">
+                <h3><b>REGISTRA TU MENOR</b></h3>
+                <div>
+                    <label for="">Tipo Documento</label>
+                    <select name="" id="">
+                        <option value="T.I">Tarjeta de identidad</option>
+                        <option value="T.I">Registro Civil</option>
+                    </select>
+
+                </div>
+                <div>
+                    <div class="documento"><label>Número de Documento</label>
+                        <input type="number" name="" id="documento" required>
+                    </div>
+
+                    <div class="nombre"><label>Nombre</label>
+                        <input type="text" name="" id="nombre" required>
+                    </div>
+
+                    <div class="apellido"><label>Apellido</label>
+                        <input type="text" name="" id="apellido" required>
+                    </div>
+
+                    <div class="telefono"><label>Número Teléfono</label>
+                        <input type="number" name="" id="telefono" required>
+                    </div>
+
+
+                    <div class="fechaNacimiento"><label>Fecha de Nacimiento</label>
+                        <input type="date" name="" id="fechaNacimiento" required>
+                    </div>
+
+                    <div>
+                        <label for="">Sexo</label>
+                        <select name="" id="sexo">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                        </select>
+
+                        <div class="rh"><label>RH</label>
+                            <input type="text" name="" id="rh" required>
+                        </div>
+
+                    </div>
+
+                    <div class="fotom">
+                        <label for="">Foto del Menor</label>
+                        <input type="file" accept="image/*" id="img" required>
+                    </div>
+                    <div class="btnsContenedor"><button class="btns" type="submit">Enviar</button></div>
+            </form>
+        </div><br>
+        <div class="cont">
+            <div class="contenedor" id="lista">
+
+            </div><br>
+        </div>
+
+    </div>
+    <div id="contenido"></div>
+
+    </div>
+
+    <script src="logica.js"></script>
+</body>
+
+</html>

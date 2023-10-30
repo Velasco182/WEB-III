@@ -1,0 +1,19 @@
+{
+  "name": "mi_node",
+  "version": "1.0.0",
+  "description": "Mi Node Js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.3",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1"
+  }
+}

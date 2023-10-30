@@ -1,0 +1,23 @@
++ Modelo vista controlador: 
+
+    - Vista : todo el front end
+    - Modelo : lo que puedo hacer con la DB (Tomar información de la DB y usarla para la aplicación)
+    - Controlador : es el puente entre vista y el modelo.
+
++ Rutas: 
+
+- Hace una suma por defecto para verificar que la db está conectada:
+- Recordar cambiar el nombre de la bd, el usuario y a contraseña
+
+        Executing (default): SELECT 1+1 AS result
+        DB is connect
+        Puerto 8000
+    
+* DEPENDENCIAS *
+- Instalar las dependencias principales para este proyecto: npm i express cors mysql2 sequelize nodemon
+- Para ver la consola en el terminal: npm install morgan
+- Para que se reinicie con cada cambio el servidor: npm install nodemon
+
+* PRUEBAS * thuderClient
+
+

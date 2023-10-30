@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Menores</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="/Javier/proyectoAgregarMenorConfiApp/assets/img/logopngconfiazul.png" type="image/*">
+</head>
+<body>
+    <h2 class="text-center my-5 titulo">Administra tus menores</h2>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-cita">
+                <form id="nuevo-menor">
+                    <legend class="mb-4">REGISTRAR MENOR</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Tipo Documento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="tdSelect" id="tdSelect">
+                                <option value="seleccionar">Seleccionar</option>
+                                <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                                <option value="Registro Civil">Registro Civil</option>
+                            </select>
+                            <!-- <input type="text" id="mascota" name="mascota" class="form-control" placeholder="Nombre Mascota"> -->
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Documento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="number" id="dMenor" name="dMenor" class="form-control"  placeholder="Número de Documento">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Nombre:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="nMenor" name="nMenor" class="form-control"  placeholder="Nombre del Menor">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Apellido:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="aMenor" name="aMenor" class="form-control" placeholder="Apellido del Menor">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Fecha de Nacimiento:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fMenor" name="fMenor" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="tMenor" name="tMenor" class="form-control"  placeholder="Teléfono del Menor">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Grupo sanguíneo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="rhSelect" id="rhSelect">
+                                <option value="seleccionar">Seleccionar</option>
+                                <option value="O -">O -</option>
+                                <option value="O +">O +</option>
+                                <option value="A -">A -</option>
+                                <option value="A +">A +</option>
+                                <option value="B -">B -</option>
+                                <option value="B +">B +</option>
+                                <option value="AB -">AB -</option>
+                                <option value="AB +">AB +</option>
+                            </select>
+                            <!-- <input type="text" id="mascota" name="mascota" class="form-control" placeholder="Nombre Mascota"> -->
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Sexo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <select class="form-control" name="sSelect" id="sSelect">
+                                <option value="seleccionar">Seleccionar</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                            </select>
+                            <!-- <input type="text" id="mascota" name="mascota" class="form-control" placeholder="Nombre Mascota"> -->
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label">Foto:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input accept="image/*" type="file"  name="fotoM" id="fotoM">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary w-100 d-block">Crear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4">Administra tus menores</h2>
+                <ul id="menores" class="list-group lista-citas"></ul>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+
+    <script src="./assets/js/app.js" type="module"></script>
+
+</body>
+</html>

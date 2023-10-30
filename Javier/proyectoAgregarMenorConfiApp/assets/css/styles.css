@@ -1,0 +1,65 @@
+html {
+  min-height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(-225deg, #1835b6 0%, #00aaffe6 52%, #00d0ff86 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+.titulo {
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: white;
+}
+.container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 12px 15px rgba(57, 57, 57, 0.2);
+}
+header {
+  margin-top: 3rem;
+}
+header h1 {
+  color: white;
+}
+
+.cita{
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  border-style:outset;
+  text-align: center;
+  background-image: linear-gradient(-225deg, #1835b61a 0%, #00aaff17 52%, #00d0ff0f 100%);
+  border-radius: 15px;
+  
+}
+
+.lista-citas{
+  box-shadow: 0 12px 15px rgba(57, 57, 57, 0.2);
+  border-radius: 15px;
+}
+.lista-citas .cita:last-of-type {
+  border-bottom: 1;
+}
+
+.lista-citas .cita p {
+  text-align: left;
+  margin:0;
+}
+.lista-citas .cita button {
+  margin-top: 1rem!important;
+}
+.lista-citas .cita span {
+  font-weight: bold;
+}
+textarea {
+    height: 200px!important;
+}
+
+svg {
+  width: 21px;
+}
